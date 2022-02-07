@@ -1,0 +1,786 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h4,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+ol {
+  margin: 0px auto;
+  padding: 0px 21px;
+}
+
+
+
+/* ok */
+.titulo-interactiva {
+  font-size: 1.2em;
+  color: #009b7f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 67vh;
+  pointer-events: none;
+}
+
+
+.contendor-bienvenida {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #dce5db;
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%2395ac92' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E"); */
+  background-image: url(./assets/img/fondo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  /*  background-image: url(./public/assets/Img/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* Imagenes */
+.responsive {
+  width: 90%;
+  height: fit-content;
+}
+
+.molecula{
+  background-image: url(./assets/img/molecula.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.responsive-molecula {
+  width: 50vh;
+  height: 39vh;
+}
+
+.responsive-imagenes {
+  width: 100%;
+  height: fit-content;
+}
+
+.responsive-video {
+  width: 70%;
+  height: 80vh;
+}
+
+.imagen-personaje {
+  background-image: url(./assets/animaciones/Personaje2.gif);
+  width: 235px;
+  height: 375px;
+  background-position: right;
+  overflow: hidden;
+}
+
+.contenido-actividad-bienvenida {
+  display: none;
+  border: 13px #2f92d8 double;
+  border-radius: 28px 28px;
+  background-color: white;
+  width: 64%;
+  height: 80%;
+  margin: 0px auto;
+  padding: 12px;
+  /* background-color: #bbbdb8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23ece8f2' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E"); */
+  opacity: 0.9;
+  background-blend-mode: hard-light;
+  margin-top: 7%;
+}
+
+
+
+
+
+.contenedor-volver {
+  width: 20%;
+  z-index: 99999;
+  margin: 0px auto;
+  display: block;
+  visibility: visible
+}
+
+.tituloPresentacion {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* css actividad nueva*/
+
+.contenedor-actividad {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(253px, auto));
+  height: 100%;
+  align-items: center;
+  place-content: center;
+}
+
+.slider-1-P1,
+.slider-2-P1,
+.slider-3-P1,
+.slider-4-P1 {
+  display: none
+}
+
+.titulo-slider-2 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 193%);
+  z-index: 1;
+}
+
+/* Sliders */
+.slider1,
+.slider2,
+.slider3,
+.slider4,
+.slider5,
+.slider6,
+.slider7,
+.slider8,
+.slider9,
+.slider10,
+.slider11 {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(253px, auto));
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  place-content: center;
+}
+
+.btn-inicio-external {
+  width: 17vh;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.bienvenida {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  height: fit-content;
+  flex-direction: column;
+  grid-gap: 2vh
+}
+
+.bienvenida .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.texto-bienvenida {
+  background-image: url(./assets/animaciones/marco-texto.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 36vh;
+  height: 46vh;
+  text-align: right;
+  padding: 5px 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0.7;
+  flex-direction: column;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2em;
+  font-family: 'Calibri', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 12px
+}
+
+
+
+.btn-inicio {
+  width: 26vh;
+  height: 14vh;
+  background-image: url(./assets/img/Btn.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Calibri', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.btn-inicio:hover {
+  transform: scale(1.05, 1.05);
+  transition: transform 0.2s ease-in;
+  background-image: url(./assets/img/BtnOver.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  cursor: pointer
+}
+
+
+.btn-inicio:not(:hover) {
+  transform: scale(1, 1);
+  transition: transform 0.2s ease-in;
+}
+
+
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5em;
+  font-family: 'Calibri', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #12584c;
+  padding: 0px 0px !important;
+  margin: 0px 0px !important;
+}
+
+
+
+.button {
+  width: 100%;
+  display: inline-block;
+  /*  outline: 1px solid #009b7f;
+    outline-offset: 2px; */
+  text-decoration: none;
+  text-align: center;
+  padding: 6px 0px;
+  border: solid 1px #004F72;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font: 18px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #E5FFFF;
+  background: #009b7f;
+  -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  margin: 23px auto;
+  cursor: pointer
+}
+
+.button:hover {
+  width: 100%;
+  margin: 0px auto;
+  padding: 6px 0px;
+  border: solid 1px #004F72;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font: 18px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #E5FFFF;
+  background-color: #009b7f;
+  background-image: -moz-linear-gradient(top, #009b7f 0%, #3b9c8a 100%);
+  background-image: -webkit-linear-gradient(top, #009b7f 0%, #3b9c8a 100%);
+  background-image: -o-linear-gradient(top, #009b7f 0%, #3b9c8a 100%);
+  background-image: -ms-linear-gradient(top, #009b7f 0%, #3b9c8a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b9c8a', endColorstr='#3b9c8a', GradientType=0);
+  background-image: linear-gradient(top, #009b7f 0%, #3b9c8a 100%);
+  -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  margin: 23px auto;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  z-index: 1;
+  align-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  /* padding: 0; */
+  width: 50vh;
+  /* display: grid; */
+  /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 13px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+
+
+.disabledbutton {
+  pointer-events: none;
+  filter: grayscale(1)
+}
+
+#video {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+#video-animacion-cicloagua{
+  display:none
+}
+
+
+#btn-repetir-molecula {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+
+#btn-repetir-aguapotable {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#btn-repetir-cicloagua {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+
+
+/* #video-animacion-aguapotable,#video-animacion-molecula,#video-animacion-aguapotable,#video-animacion-aguapotable,#video-animacion-cicloagua{
+  display: none
+} */
+
+
+
+.botones-navegacion {
+  display: flex;
+  position: relative;
+  left: 0%;
+  bottom: 19%;
+  flex-direction: row;
+  grid-gap: 7vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 7vh;
+  transform: translate(0%,100%);
+
+}
+
+.btn-atras,
+.btn-siguiente {
+  visibility: hidden;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .contenido-actividad-bienvenida {
+    width: fit-content;
+    height: 59%
+  }
+
+
+  .contenedor-actividad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    height: fit-content;
+    align-items: center;
+  }
+
+  .contenedor-actividad p {
+    font-size: 0.8em
+  }
+
+
+
+
+  .bienvenida {
+    grid-gap: 4vh
+  }
+
+
+
+  .descripcion {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    text-align: justify;
+    place-items: center;
+    align-items: center;
+  }
+
+  .tituloPresentacion {
+    top: 13%;
+  }
+
+  .responsive {
+    width: 40vh;
+  }
+
+  .contenedor-volver {
+    width: 70%;
+    font-size: 0.8em
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  /* CSS */
+  .contenedor-actividad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(253px, auto));
+    height: fit-content;
+    align-items: center;
+    place-content: center;
+    grid-gap: 10vh
+  }
+
+
+  .contenedor-actividad p {
+    font-size: 0.8em
+  }
+
+  .descripcion {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    text-align: justify;
+    place-items: center;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  .slider1,
+  .slider2,
+  .slider3,
+  .slider4,
+  .slider5,
+  .slider6,
+  .slider7,
+  .slider10,
+  .slider9,
+  .slider10,
+  .slider11 {
+    display: none
+  }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  /* CSS */
+  /* CSS */
+  .contenido-actividad-bienvenida {
+    width: fit-content;
+    height: 59%
+  }
+
+  .imagen-personaje {
+    background-image: url(./assets/animaciones/Personaje2.gif);
+    width: 220px;
+    height: 375px;
+    background-position: right;
+    overflow: hidden;
+    background-size: 176%;
+    background-repeat: no-repeat;
+    margin: -49px;
+  }
+
+  .contenedor-actividad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(253px, auto));
+    height: 71vh;
+    align-items: center;
+    place-content: center;
+  }
+
+
+  .contenedor-actividad p {
+    font-size: 0.8em
+  }
+
+  .responsive-personaje{
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+  }
+
+
+
+
+  .bienvenida {
+    grid-gap: 4vh;
+    height: 80vh;
+    justify-content: center;
+  }
+
+
+  .tituloPresentacion {
+    top: 13%;
+  }
+
+  .responsive {
+    width: 100vh;
+  }
+
+  .texto-bienvenida {
+    font-size: 0.7em;
+    width: 47vh;
+    height: 30vh;
+    padding: 5px 46px;
+    background-size: 60% 60%;
+  }
+
+  .texto-descripcion {
+    font-size: 0.8em;
+    height: 78vh;
+    overflow: scroll;
+    margin-top: 30%;
+  }
+
+
+  .contenedor-volver {
+    width: 70%;
+    font-size: 0.8em
+  }
+
+  .slider1,
+  .slider2,
+  .slider3,
+  .slider4,
+  .slider5,
+  .slider6,
+  .slider7,
+  .slider8,
+  .slider9,
+  .slider10,
+  .slider11 {
+    display: none
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* CSS */
+  h1{
+    font-size: 1.3em;
+  }
+
+  .contenido-actividad-bienvenida {
+    width: 79vw;
+    height: 100vh;
+    margin-top: 20%;
+  }
+
+  .imagen-personaje {
+    background-image: url(./assets/animaciones/Personaje2.gif);
+    width: 220px;
+    height: 375px;
+    background-position: right;
+    overflow: hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .responsive-personaje{
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+  }
+
+  .contenedor-actividad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(253px, auto));
+    height: 100%;
+    align-items: center;
+    place-content: center;
+    grid-gap: 5vh
+  }
+
+  .contenedor-actividad p {
+    font-size: 0.8em
+  }
+
+  .texto-bienvenida{
+    background-size:contain;
+    font-size: 1.2em;
+  }
+
+
+  .texto-bienvenida p{
+    width: 50vw;
+    font-size: 0.8em;
+    height: fit-content;
+  }
+
+
+.bienvenida {
+  grid-gap: 4vh;
+  height: 80vh;
+  justify-content: center;
+}
+
+  .descripcion {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    text-align: justify;
+    place-items: center;
+    align-items: center;
+    height: 59vh;
+    overflow: scroll;
+  }
+
+  .tituloPresentacion {
+    top: 14%;
+  }
+
+  .responsive {
+    width: 40vh;
+  }
+
+  .responsive-video {
+    width:100%;
+    height: auto
+  }
+
+  .responsive-molecula {
+    width: 50%;
+    height: 39vh;
+  }
+
+  .contenedor-volver {
+    width: 70%;
+    font-size: 0.8em
+  }
+
+
+
+
+  .slider1,
+  .slider2,
+  .slider3,
+  .slider4,
+  .slider5,
+  .slider6,
+  .slider7,
+  .slider8,
+  .slider9,
+  .slider10,
+  .slider11 {
+    display: none
+  }
+
+  .btn-inicio-external {
+    width: 8vh;
+  }
+
+  .botones-navegacion {
+    grid-gap: 2vh;
+    left: initial;
+    width: 100vw;
+    bottom: 16%;
+  }
+
+  .bienvenida .row {
+    flex-direction: column-reverse;
+    width: 80vw;
+    height:61vh
+  }
+}
